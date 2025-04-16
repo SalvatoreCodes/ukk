@@ -3,7 +3,7 @@ const pelangganForm = document.getElementById("pelanggan-form");
 
 async function fetchPelanggan() {
   try {
-    const res = await fetch("http://localhost:3000/pelanggan");
+    const res = await fetch("http://192.168.1.34/pelanggan");
     if (!res.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
@@ -34,7 +34,7 @@ async function addPelanggan(e) {
   const pelangganLength = pelangganList.children.length + 1;
 
   try {
-    const res = await fetch("http://localhost:3000/pelanggan", {
+    const res = await fetch("http://192.168.1.34/pelanggan", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",

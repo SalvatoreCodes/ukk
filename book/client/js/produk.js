@@ -3,7 +3,7 @@ const produkForm = document.getElementById("produk-form");
 
 async function fetchProduk() {
   try {
-    const response = await fetch("http://localhost:3000/produk");
+    const response = await fetch("http://192.168.1.34/produk");
     if (!response.ok) {
       throw new Error("Network response was not ok " + response.statusText);
     }
@@ -33,7 +33,7 @@ async function addProduk(e) {
   const produkLength = produkList.children.length + 1;
 
   try {
-    const response = await fetch("http://localhost:3000/produk", {
+    const response = await fetch("http://192.168.1.34/produk", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
