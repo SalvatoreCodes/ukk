@@ -104,6 +104,6 @@ app.post("/produk", (req, res) => {
   );
 });
 
-app.listen(3000, () => {
-  console.log("Server is running on port 3000");
+app.listen("80", "192.168.1.34", () => {
+  console.log("Server is running on port 192.168.1.34");
 });
