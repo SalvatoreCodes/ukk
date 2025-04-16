@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.data-list {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+  margin-top: 16px;
+}
+
+.data-item {
+  height: max-content;
+  width: 8rem;
+  padding: 8px;
+  background-color: lightgray;
+  border: padding;
+}
