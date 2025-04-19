@@ -19,7 +19,7 @@ const pelanggan = () => {
   mainContent.innerHTML = `
       <div class="pelanggan-container data-container" id="pelanggan-container">
         <h1>Pelanggan</h1>
-        <form id="pelanggan-form">
+        <form id="pelanggan-form" class="post-form">
           <input
             type="text"
             id="nama-pelanggan"
@@ -46,7 +46,7 @@ const produk = () => {
   mainContent.innerHTML = `
       <div class="produk-container data-container" id="produk-container">
       <h1>Produk</h1>
-      <form id="produk-form">
+      <form id="produk-form" class="post-form">
         <input
           type="text"
           id="nama-produk"

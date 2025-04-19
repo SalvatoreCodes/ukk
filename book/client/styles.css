@@ -8,10 +8,27 @@
 
 body {
   display: flex;
+  background-color: #333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Special Gothic Expanded One", sans-serif;
+  color: white;
+  letter-spacing: 4px;
+}
+
+a,
+p {
+  font-family: "Open Sans", sans-serif;
 }
 
 nav {
-  background-color: lightblue;
+  background-color: #222;
   width: max-content;
   height: 100vh;
   display: flex;
@@ -21,13 +38,13 @@ nav {
 nav h1 {
   font-size: 2rem;
   margin-bottom: 16px;
-  color: navy;
+  color: white;
   padding: 16px;
-  padding-right: 128px;
+  padding-right: 64px;
 }
 
 nav a {
-  color: black;
+  color: lightgray;
   text-decoration: none;
   padding: 12px;
   font-weight: bold;
@@ -36,11 +53,45 @@ nav a {
 
 nav a:hover {
   background-color: lightgray;
-  color: black;
+  color: #222;
 }
 
 main {
   padding: 16px;
+}
+
+.post-form {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+.post-form input {
+  padding: 8px 16px;
+  border-radius: 4px;
+  border: none;
+  background-color: lightgray;
+  width: 50%;
+}
+
+.post-form input:focus {
+  outline: none;
+}
+
+.post-form button {
+  padding: 8px;
+  border-radius: 4px;
+  border: none;
+  background-color: #222;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  width: 50%;
+}
+
+.post-form button:hover {
+  background-color: lightgray;
+  color: #222;
 }
 
 .data-container h1 {
@@ -62,4 +113,9 @@ main {
   padding: 8px;
   background-color: lightgray;
   border: padding;
+  border-radius: 4px;
+}
+
+.data-item h2 {
+  color: #222;
 }
